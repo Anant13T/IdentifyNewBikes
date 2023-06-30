@@ -17,10 +17,11 @@ public class TestCases
 	
 	
 	@BeforeClass
-	public void driverSetUp()
+	@Parameters("browser")
+	public void driverSetUp(String browser)
 	{	
 		DriverSetup ds=new DriverSetup();
-		driver=ds.setUp("edge");
+		driver=ds.setUp(browser);
 	}
 	
 	@Test(enabled=true)

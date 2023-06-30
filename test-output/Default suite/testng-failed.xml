@@ -6,8 +6,10 @@
       <class name="Main.TestCases">
         <methods>
           <include name="test1"/>
+          <include name="test3"/>
           <include name="closeDriver"/>
           <include name="driverSetUp"/>
+          <include name="test2"/>
         </methods>
       </class> <!-- Main.TestCases -->
     </classes>
